@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Big_Guy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Punch Me i Liked To be Punched" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAp-AI-y3N">
+                                <rect key="frame" x="20" y="74" width="388" height="50"/>
+                                <color key="backgroundColor" red="0.27450980390000002" green="0.50980392159999999" blue="0.70588235290000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rBh-FH-NB9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thH-jh-xwp">
+                                <rect key="frame" x="20" y="769" width="388" height="55"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="gku-DG-ZU9"/>
+                                </constraints>
+                                <state key="normal" image="camera.on.rectangle.fill" catalog="system">
+                                    <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jvx-YW-sq4"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trumpo" translatesAutoresizingMaskIntoConstraints="NO" id="TAN-1g-J6d">
+                                <rect key="frame" x="20" y="154" width="388" height="550"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="550" id="l4T-Vc-TuR"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TAN-1g-J6d" secondAttribute="trailing" constant="20" id="3tb-60-wm0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="thH-jh-xwp" secondAttribute="trailing" constant="20" id="4gY-fg-uTA"/>
+                            <constraint firstItem="thH-jh-xwp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="78j-pg-HD5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fAp-AI-y3N" secondAttribute="trailing" constant="20" id="Ycb-gi-vUi"/>
+                            <constraint firstItem="thH-jh-xwp" firstAttribute="top" secondItem="TAN-1g-J6d" secondAttribute="bottom" constant="65" id="bVv-DX-tVw"/>
+                            <constraint firstItem="TAN-1g-J6d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nCI-7e-2rf"/>
+                            <constraint firstItem="TAN-1g-J6d" firstAttribute="top" secondItem="fAp-AI-y3N" secondAttribute="bottom" constant="30" id="nda-e6-o5L"/>
+                            <constraint firstItem="fAp-AI-y3N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="p3W-jq-7W2"/>
+                            <constraint firstItem="fAp-AI-y3N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tYp-1Y-PC1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="TAN-1g-J6d" id="uau-wV-gsj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.18691588785046" y="63.498920086393092"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera.on.rectangle.fill" catalog="system" width="128" height="96"/>
+        <image name="trumpo" width="197" height="255"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
